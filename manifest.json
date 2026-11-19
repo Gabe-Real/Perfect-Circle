@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Perfect Circle Bot",
+  "version": "1.0.0",
+  "description": "Draws a (suspiciously) perfect circle on neal.fun's Draw a Perfect Circle. A joke, not a real score.",
+  "permissions": ["debugger", "activeTab", "scripting", "storage"],
+  "host_permissions": ["https://neal.fun/*"],
+  "background": { "service_worker": "background.js" },
+  "action": { "default_popup": "popup.html", "default_title": "Perfect Circle Bot" },
+  "commands": {
+    "draw-circle": {
+      "suggested_key": { "default": "Alt+Shift+C" },
+      "description": "Draw the circle"
+    }
+  }
+}
